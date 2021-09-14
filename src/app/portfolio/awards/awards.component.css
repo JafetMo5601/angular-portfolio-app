@@ -1,0 +1,96 @@
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-title {
+    margin-bottom: 0.3em;
+}
+
+#awards .awards {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+    margin-top: 10%;
+}
+
+#awards .awards-top {
+    max-width: 500px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+#awards .awards-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+}
+
+#awards .awards-item {
+    text-align: left;
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(/static/images/Award_img.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#awards .awards-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: .9;
+    z-index: -1;
+}
+
+#awards .awards-bottom .icon {
+    height: 80px;
+    width: 80px;
+    margin: 20px auto;
+    margin-bottom: 35px;
+}
+
+#awards .awards-item h2 {
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#awards .awards-item p {
+    color: white;
+    text-align: justify;
+}
+
+@media only screen and (min-width: 1200px) {
+    #awards .awards-bottom .awards-item {
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+}

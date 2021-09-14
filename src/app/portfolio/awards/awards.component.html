@@ -1,0 +1,17 @@
+<section id="awards">
+    <div class="awards container">
+        <div class="awards-top">
+            <h1 class="section-title">Aw<span>a</span>rds</h1>
+            <p>Most of the following awards are due to my participation in technology fairs, Expo-engineering, project
+                development in the high school and internships, but above all for enjoying trying to innovate with
+                technology.</p>
+        </div>
+        <div class="awards-bottom">
+            <div class="awards-item" *ngFor="let award of awards">
+                <div class="icon"><img src=""/></div>
+                <h2>{{ award.title }}</h2>
+                <p>{{ award.description }}</p>
+            </div>
+        </div>
+    </div>
+</section>
