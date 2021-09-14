@@ -1,0 +1,25 @@
+<section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item" *ngFor="let project of projects">
+          <div class="project-info">
+            <h1><a href="{{ project.url }}">{{ project.name }}</a></h1>
+            <br>
+            <p>{{ project.description }}</p>
+          </div>
+          <div class="project-img">
+            <div class="tech-review">
+              <h2>Tools</h2>
+              <ul>
+                <li *ngFor="let tool of project.tools">{{ tool }}</li>
+              </ul>
+            </div>
+            <img src=""/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
